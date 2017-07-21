@@ -10,7 +10,6 @@ import numpy as np
 
 from time import time
 import logging
-import matplotlib.pyplot as plt
 
 from sklearn.model_selection import train_test_split
 from sklearn.model_selection import GridSearchCV
