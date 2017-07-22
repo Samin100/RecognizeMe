@@ -5,22 +5,71 @@
 		<title>Facial Recognition</title>
 		<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="../static/css/main.css">
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
 	</head>
 	<body>
-		<div class="container">
+		<div class="container">	
 			<div class="row status">
 				<div class="col"><strong>STATUS:</strong>&nbsp;&nbsp;&nbsp;Hello, World!</div>
 			</div>
 			<div class="row" style="margin-bottom: 15px"></div>
 			<div class="row">
-				<div class="col-sm-3 cols cellbox" style="margin-left: 1.3%""></div>
-				<div class="col-sm-3 cols cellbox" style="margin:0 1.3%"></div>
+				<div class="col-sm-3 cols cellbox" style="margin-left: 1.3%"">
+					<p>Trusted Individuals</p>
+					<table id="table_id" class="display">
+					    <thead>
+					        <tr>
+					            <th>Name:</th>
+					            <th>Face:</th>
+					        </tr>
+					    </thead>
+					    <tbody>
+					        <tr>
+					            <td>Asmita Shah</td>
+					            <td><img src="../static/images/asmita.jpg"/></td>			            
+					        </tr>
+					        <tr>
+					            <td>Brandy Weiss</td>
+					            <td><img src="../static/images/brandy.jpg"/></td>
+					        </tr>
+					        <tr>
+					            <td>Namita Dongre</td>
+					            <td><img src="../static/images/namita.jpg"/></td>
+					        </tr>
+					        <tr>
+					            <td>Sharif Shameem</td>
+					            <td><img src="../static/images/sharif.jpg"/></td>
+					        </tr>
+					        <tr>
+					            <td>Victoria Yang</td>
+					            <td><img src="../static/images/victoria.jpg"/></td>
+					        </tr>		        					        					        
+					    </tbody>
+					</table>					
+				</div>
+				<div class="col-sm-3 cols cellbox" style="margin:0 1.3%">
+					<p>Untrusted Individuals</p>
+					<table id="table_id2" class="display">
+					    <thead>
+					        <tr>
+					            <th>Name:</th>
+					            <th>Face:</th>
+					        </tr>
+					    </thead>
+					    <tbody>
+					        <tr>
+					            <td>Suspect #1</td>
+					            <td><img src="../static/images/ming.jpg"/></td>
+					        </tr>		        					        					        
+					    </tbody>
+					</table>						
+				</div>
 				<div class="col-sm-5 cols" style="margin-right:1.3%">
 					<div class="row cellboxmini">
-
+						<div class="col"><p>Unidentifed Individuals</p></div>
 					</div>
 					<div class="row cellboxmini" style="margin-top:4%">
-						
+						<div class="col"><p>Log</p></div>						
 					</div>
 				</div>
 			</div>
@@ -28,6 +77,14 @@
 
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 		<script type="text/javascript" src="../static/js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>		
 		<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready( function () {
+			    $('#table_id').DataTable();
+			    $('#table_id2').DataTable();			    
+			} );			
+		</script>		
 	</body>
 </html>

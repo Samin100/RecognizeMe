@@ -11,15 +11,33 @@
 }
 
 .cellbox{
+	border-radius: 25px;
 	border: 1px solid black;
 	text-align: center;
 }
 
+.cellbox > p{
+	margin-top: 10px;
+	font-size: 16pt;
+}
+
 .cellboxmini{
+	border-radius: 25px;
 	border: 1px solid black;
 	height: 375px;
+	text-align: center;
+}
+
+.col > p{
+	margin-top: 10px;
+	font-size: 16pt;
 }
 
 .container{
 	width: inherit;	
+}
+ 
+img{
+	width: 100px;
+	height: auto;
 }
