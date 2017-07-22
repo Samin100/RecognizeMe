@@ -1,5 +1,5 @@
 .status{
-	background-color: greenyellow;
+	background-color: red;
 	font-size: 30px;
 	height: 10%;
 	line-height: 100px;
@@ -12,7 +12,7 @@
 
 .cellbox{
 	border-radius: 25px;
-	border: 1px solid black;
+	border: 2px solid black;
 	text-align: center;
 }
 
@@ -23,9 +23,8 @@
 
 .cellboxmini{
 	border-radius: 25px;
-	border: 1px solid black;
+	border: 2px solid black;
 	height: 375px;
-	text-align: center;
 }
 
 .col > p{
@@ -40,4 +39,8 @@
 img{
 	width: 100px;
 	height: auto;
+}
+
+#logbox{
+	color: white;
 }
