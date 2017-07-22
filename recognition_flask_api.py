@@ -6,8 +6,6 @@ import os
 
 app = Flask(__name__)
 
-
-
 @app.route('/recognition', methods=['POST'])
 def compare_known_to_unknowns():
     data = request.get_json()
