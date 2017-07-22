@@ -1,19 +1,32 @@
 #status{
-	background-color: greenyellow;
 	text-align: center;
 	font-size: 30px;
 	height: 10%;
+    color: green;
+    text-align: center;
+   padding-left:40%;
 }
 
 .cellbox{
 	border: 1px solid black;
-	text-align: center;
 }
 
 .container-fluid{
-	padding: 3%;
+    padding: 2%;
+   margin-top: -2%;
+    background-color: lightcyan;
 }
 
 #colz{
 	height: 90%;
+    text-align: center;
+    padding-top:10px;
 }
+
+.sidecol{
+    text-align: center;
+}
+body{
+    text-align: center !important;
+}
+
