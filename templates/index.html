@@ -14,7 +14,7 @@
 			</div>
 			<div class="row" style="margin-bottom: 15px"></div>
 			<div class="row">
-				<div class="col-sm-3 cols cellbox" style="margin-left: 1.3%"">
+				<div class="col-sm-3 cols cellbox" style="margin-left: 1.3%" ondrop="drop(event)">
 					<p>Trusted Individuals</p>
 					<table id="table_id" class="display">
 					    <thead>
@@ -66,7 +66,16 @@
 				</div>
 				<div class="col-sm-5 cols" style="margin-right:1.3%">
 					<div class="row cellboxmini">
-						<div class="col"><p>Unidentifed Individuals</p></div>
+						<div class="col">
+							<p>Unidentifed Individuals</p>
+							<table id="table_id3" class="display">
+							    <tbody>
+							        <tr>
+							            <td><img src="../static/images/ming.jpg" draggable="true"/></td>
+							        </tr>		        					        					        
+							    </tbody>
+							</table>	
+						</div>
 					</div>
 					<div class="row cellboxmini" style="margin-top:4%">
 						<div class="col"><p>Log</p></div>						
@@ -85,6 +94,29 @@
 			    $('#table_id').DataTable();
 			    $('#table_id2').DataTable();			    
 			} );			
+		</script>
+
+		<script>
+			function allowDrop(ev) {
+			    ev.preventDefault();
+			}
+
+			function drop(ev) {
+			    ev.preventDefault();
+
+		  		var t = $('#table_id').DataTable();
+		   		var counter = 1;
+		   		var data = ev.dataTransfer.getData("text");
+				var myimg = document.getElementById(data);
+	 
+
+		        t.row.add( [
+		            'Suspect #' + counter,
+		           	myimg
+		        ] ).draw( false );
+		 
+		        counter++;
+			}
 		</script>		
 	</body>
 </html>
