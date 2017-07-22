@@ -78,7 +78,7 @@
 						</div>
 					</div>
 					<div class="row cellboxmini" style="margin-top:4%">
-						<div class="col"><p>Log</p></div>						
+						<div class="col"  id="logbox"><p>Log</p></div>						
 					</div>
 				</div>
 			</div>
@@ -93,9 +93,9 @@
 			$(document).ready( function () {
 			    $('#table_id').DataTable();
 			    $('#table_id2').DataTable();			    
-			} );			
-        <script type="text/javascript">
-            $(document).ready( function () {
+			} );	
+		</script>
+       <script type="text/javascript">
             var currentdate = new Date(); 
             var datetime = (currentdate.getMonth()+1) + "/" + currentdate.getDate()
                   + "/" + currentdate.getFullYear() + " @ "  
@@ -106,8 +106,7 @@
             if (!status.includes("Normal")){
                         document.getElementById("logbox").innerHTML += datetime + " suspicious activity";
             }
-            } );	
-		</script>	
+		</script>		
 		<script>
 			function allowDrop(ev) {
 			    ev.preventDefault();
