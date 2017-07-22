@@ -1,8 +1,13 @@
-#status{
+.status{
 	background-color: greenyellow;
-	text-align: center;
 	font-size: 30px;
 	height: 10%;
+	line-height: 100px;
+	text-align: center;
+}
+
+.cols{
+	height: 780px;
 }
 
 .cellbox{
@@ -10,10 +15,11 @@
 	text-align: center;
 }
 
-.container-fluid{
-	padding: 3%;
+.cellboxmini{
+	border: 1px solid black;
+	height: 375px;
 }
 
-#colz{
-	height: 90%;
+.container{
+	width: inherit;	
 }
