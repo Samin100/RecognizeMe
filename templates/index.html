@@ -95,7 +95,14 @@
 			    $('#table_id2').DataTable();			    
 			} );			
 		</script>
-
+		        <script type="text/javascript">
+            $(document).ready( function () {
+			var status = document.getElementsByClassName('status')[0].innerHTML;	
+            if (!status.includes("Normal")){
+                     alert("Problem!");
+            }
+            } );	
+		</script>	
 		<script>
 			function allowDrop(ev) {
 			    ev.preventDefault();
