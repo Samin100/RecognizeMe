@@ -94,12 +94,17 @@
 			    $('#table_id').DataTable();
 			    $('#table_id2').DataTable();			    
 			} );			
-		</script>
-		        <script type="text/javascript">
+        <script type="text/javascript">
             $(document).ready( function () {
+            var currentdate = new Date(); 
+            var datetime = (currentdate.getMonth()+1) + "/" + currentdate.getDate()
+                  + "/" + currentdate.getFullYear() + " @ "  
+                + currentdate.getHours() + ":"  
+                + currentdate.getMinutes() + ":" 
+                + currentdate.getSeconds() + ":";
 			var status = document.getElementsByClassName('status')[0].innerHTML;	
             if (!status.includes("Normal")){
-                     alert("Problem!");
+                        document.getElementById("logbox").innerHTML += datetime + " suspicious activity";
             }
             } );	
 		</script>	
