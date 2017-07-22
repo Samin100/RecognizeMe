@@ -1,0 +1,19 @@
+#status{
+	background-color: greenyellow;
+	text-align: center;
+	font-size: 30px;
+	height: 10%;
+}
+
+.cellbox{
+	border: 1px solid black;
+	text-align: center;
+}
+
+.container-fluid{
+	padding: 3%;
+}
+
+#colz{
+	height: 90%;
+}
