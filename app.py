@@ -22,4 +22,4 @@ def compare_known_to_unknowns():
     return jsonify({'recognitionResults': output}), 201
 
 if __name__ == "__main__":
-	app.run()
+    app.run()
